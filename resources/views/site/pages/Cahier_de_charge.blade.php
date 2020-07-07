@@ -1,8 +1,13 @@
-
 @extends('site.partials.layout')
 @section('header')
 @endsection
 @section('corp')
+
+
+
+
+
+
 
 
 
@@ -34,20 +39,19 @@
 
                                                     <li><a class="menue"  href="{{url('/')}}">Accueil</a></li>
                                                     {{-- <li><a class="menue"  href="{{url('/Presentation')}}">Présentation</a></li> --}}
-                                                    <li class="active" > <div class="dropdown1"><a class="dropbtn menue">Abonnement</a>
+                                                    <li class="dropdown1"><a class="dropbtn menue">Abonnement</a>
                                                         <div class="dropdown-content">
                                                             <a class="link-hover" href="{{url('Abonnement')}}">S'abonner</a>
                                                             <a class="link-hover" data-toggle="modal" data-target="#modalLoginForm">Se Connecter</a>
                                                             <a class="link-hover" href="{{url('tarif')}}">Tarif</a>
-                                                        </div></div>
+                                                        </div>
                                                     </li>
 
-                                                    <li  ><a  class="menue" href="{{url('/Cahier_de_charge')}}">Cahier de charge</a></li>
+                                                    <li class="active"><a  class="menue" href="{{url('/Cahier_de_charge')}}">Cahier de charge</a></li>
+
                                                     <li  ><a  class="menue" href="{{url('/Points_de_ventes')}}">Point de Ventes</a></li>
 
                                                     
-                                                    
-                                                     
                                                     <li><a class="menue" href="{{url('tarif')}}">Tarifs</a></li>
 
                                                     <li><a class="menue" href="{{url('Contact')}}">Contactez Nous</a></li>
@@ -64,24 +68,33 @@
 
 
 
-            <!-- Breadcrumbs -->
-			<section style="background-image: url('{{asset('site/images/slider/slider-image1.jpg')}}')" class="breadcrumbs overlay" data-stellar-background-ratio="0.5">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2>Abonnement</h2>
-							<ul>
-								<li><a href="{{url('/')}}"><i class="fa fa-home"></i>Home</a></li>
-								<li><a href="#"><i class="fa fa-clone"></i>Abonnement</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<!--/ End Breadcrumbs -->
-            <!-- Default form register -->
-			<div class="row">
+
+
+
+    <!-- Breadcrumbs -->
+    <section style="background-image: url('{{asset('site/images/slider/slider-image1.jpg')}}')" class="breadcrumbs overlay" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Cahier de charge</h2>
+                    <ul>
+                        <li><a href="{{url('/')}}"><i class="fa fa-home"></i>Accueil</a></li>
+                        <li><a href="#"><i class="fa fa-clone"></i>Cahier de charge</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        
+          
+        
+    <!--/ End Breadcrumbs -->
+    <!-- Contact Us -->
+ 
+    <!--/ End Clients Us -->
+
+<div class="row">
                         <!-- Contact Form -->
             <div class="col-lg-9 col-12">
             <div class="container" style="margin-top:20px">
@@ -154,16 +167,12 @@
 						
 
                
-				<h4 align="center">Vous pouvez télécharger le formulaire d'abonnement.</h4></br>
+				<h4 align="center">Vous pouvez télécharger le formulaire en format PDF</h4></br>
                                             <button type="button" class="btn btn-info" style="margin-left:25px"> <a href="{{asset('site/formulaire.pdf')}}">Telecharger</a></button>
 				</div>
 				</div>
 				</div>
 				</div>
-						
-						
-
-
 
 @endsection
 @section('footer')

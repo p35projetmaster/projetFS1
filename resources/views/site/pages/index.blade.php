@@ -3,68 +3,160 @@
 @section('header')
 @endsection
 @section('corp')
+
+<div class="header-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-12">
+                <!-- Logo -->
+                <div class="logo">
+                  <!-- Text Logo -->
+                  {{-- <div class="text-logo">
+                    <a href="index.html">Baosem.</a>
+                  </div> --}}
+                  <!-- Image Logo-->
+                  <div class="img-logo">
+                    <a href="{{url('/')}}"><img src="{{asset('site/images/logo/logo.png')}}" alt="logo"></a>
+                  </div>
+                </div>
+                <!-- Mobile Menu -->
+            <div class="mobile-nav"></div>
+              </div>
+              <div class="col-lg-10 col-12">
+                <div class="main-menu-bar">
+                  <!-- Main Menu -->
+                  <div class="main-menu">
+                    <nav class="navbar navbar-expand-lg">
+                      <div class="navbar-collapse">
+                        <ul class="nav menu navbar-nav">
+
+                                                    <li class="active"><a class="menue"  href="{{url('/')}}">Accueil</a></li>
+                          {{-- <li><a class="menue"  href="{{url('/Presentation')}}">Présentation</a></li> --}}
+                          <li class="dropdown1"><a class="dropbtn menue">Abonnement</a>
+                                                        <div class="dropdown-content">
+                                                            <a class="link-hover" href="{{url('Abonnement')}}">S'abonner</a>
+                                                            <a class="link-hover" data-toggle="modal" data-target="#modalLoginForm">Se Connecter</a>
+                                                            <a class="link-hover" href="{{url('tarif')}}">Tarif</a>
+                                                        </div>
+                                                    </li>
+                                                    <li  ><a  class="menue" href="{{url('/Cahier_de_charge')}}">Cahier de charge</a></li>
+
+                                                    <li><a class="menue" href="{{url('/Points_de_ventes')}}">Point de Ventes</a></li>
+                                                     
+                                                    <li><a class="menue" href="{{url('tarif')}}">Tarifs</a></li>
+
+                          <li><a class="menue" href="{{url('Contact')}}">Contactez Nous</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                  <!--/ End Main Menu -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ End Header Inner -->
+            
+
+
+
             <!-- Hero Area -->
-			<section class="hero-area">
-				<div class="hero-slider">
-					<!-- Single Slider -->
-					<div class="single-slide" style="background-image:url('{{asset('site/images/slider/slider-image1.jpg')}}')">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8 col-12">
-									<!-- Welcome Text -->
-									<div class="welcome-text">
-										<div class="welcome-text-inner">
-											<div class="welcome-text-content">
-												<h1>Qui somme <span>Nous</span></h1>
-												<p>La société <span class="color" style="font-weight:600">BAOSEM</span> est spécialisée dans l'édtlon et la publication
+      <section class="hero-area">
+        <div class="hero-slider">
+          <!-- Single Slider -->
+           <div class="single-slide" style="background-image:url('{{asset('site/images/slider/slider-image.jpg')}}')">
+            <div class="container">
+              <div class="row">
+			  
+                <div class="col-xs-12 col-sm-4" >
+                  <!-- Welcome Text -->
+                  <div class="welcome-text">
+                    <div class="welcome-text-inner">
+                      <div class="welcome-text-content">
+                        <h1 align="center">Qui somme <span>Nous</span></h1>
+                        <p>La société <span class="color" style="font-weight:600">BAOSEM</span> est spécialisée dans l'édtlon et la publication
                                                     du bulletin des appels d'offres du secteur de l'Energle BAOSEM, incluant les publications d'appels à concurrence:</p>
                                                     <ul class="qui_somme_ul">
                                                         <li>Appels d'offres des soclétés du Groupe <span class="color">SONATRACH.</span></li>
                                                         <li>Appels d'offres des sociétés du Groupe <span class="color">SONELGAZ.</span></li>
                                                         <li>Appels d'offres d'autres Entités du Secteur de <span class="color">l'Energie.</span></li>
                                                     </ul>
-												<div class="button">
-													<a href="#presentation"  class="btn theme-2 effect scrolll">Découvrir Plus<i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Welcome Text -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--/ End Slider Single -->
-				</div>
-			</section>
-			<!--/ End Hero Area -->
+                        <div class="button">
+                          <a href="#presentation"  class="btn theme-2 effect scrolll">Découvrir Plus<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Welcome Text -->
+                </div>
+               
+                <div class="col-xs-12 col-sm-6">
+                  
+<div class="wrapper fadeInDown" >
+  <div class="welcome-text">
+  <div id="formContent" >
+    <!-- Tabs Titles -->
+ <h1 aligne="center">Accés <Span>Abonné</Span> </h1> 
+    <!-- Icon -->
+   
+
+    <!-- Login Form -->
+    <form>
+     
+      
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nom d'utilisateur">
+      <input type="text" id="password" class="fadeIn third" name="pasword" placeholder="Mot de passe">
+
+      <input type="submit" class="fadeIn fourth" value="Se connecter">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Mot de passe oublié?</a>
+    </div>
+    <div id="formFooter">
+      <a class="underlineHover" href="{{url('Abonnement')}}">s'abonner</a>
+
+    </div></div>
+
+  </div>
+</div>                </div>  
+                
+              </div>
+            </div>
+          </div>
+          <!--/ End Slider Single -->
+        </div>
+      </section>
+      <!--/ End Hero Area -->
 
 
-			<!-- Skills -->
-			<section class="skills section-padding p-top-70" id="presentation">
-				<!--/ End Skill Video -->
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="skill-main m-top-30">
-								<div class="section-title text-left">
-									<h2><span>Présentation</span></h2>
-								</div>
-								<div class="tab-main">
-									<!-- Tabs Nav -->
-									<ul class="nav nav-tabs" role="tablist">
-										<li role="presentation"><a class="active" href="#tab1" role="tab" data-toggle="tab"><i class="fa fa-home"></i>A Propos</a></li>
-										<li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i>Edition</a></li>
-										<li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><i class="fa fa-rocket"></i>Bulletin</a></li>
-									</ul>
-									<!--/ End Tabs Nav -->
-									<div class="tab-content">
-										<!-- Tab Single  -->
-										<div role="tabpanel" class="tab-pane active fade show" id="tab1">
-											<div class="row">
-												<div class="col-lg-6 col-12">
-												<div class="content-inner m-top-30">
-													<p>La société BAOSEM, filiale des groupes SONATRACH et SONELGAZ été fondée
+      <!-- Skills -->
+      <section class="skills section-padding p-top-70" id="presentation">
+        <!--/ End Skill Video -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="skill-main m-top-30">
+                <div class="section-title text-left">
+                  <h2><span>Présentation</span></h2>
+                </div>
+                <div class="tab-main">
+                  <!-- Tabs Nav -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a class="active" href="#tab1" role="tab" data-toggle="tab"><i class="fa fa-home"></i>A Propos</a></li>
+                    <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i>Edition</a></li>
+                    <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><i class="fa fa-rocket"></i>Bulletin</a></li>
+                  </ul>
+                  <!--/ End Tabs Nav -->
+                  <div class="tab-content">
+                    <!-- Tab Single  -->
+                    <div role="tabpanel" class="tab-pane active fade show" id="tab1">
+                      <div class="row">
+                        <div class="col-lg-6 col-12">
+                        <div class="content-inner m-top-30">
+                          <p>La société BAOSEM, filiale des groupes SONATRACH et SONELGAZ été fondée
                                                         le 17 Novembre 2002 dans le cadre de la politique de passation des marchés du
                                                         Secteur de l'Energie.
                                                     </p>
@@ -87,22 +179,22 @@
 
 
 
-												</div>
-												</div>
-												<div class="col-lg-6 col-12">
-													<div class="skill-img m-top-30">
-														<img src="{{asset('site/images/skill-img.jpg')}}" alt="#">
-													</div>
-												</div>
-											</div>
-										</div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                          <div class="skill-img m-top-30">
+                            <img src="{{asset('site/images/skill-img.jpg')}}" alt="#">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                                         <!--/ End Tab Single  -->
 
-										<!-- Tab Single  -->
-										<div role="tabpanel" class="tab-pane fade show" id="tab2">
-											<div class="row">
-												<div class="col-lg-6 col-12">
-												    <div class="content-inner m-top-30">
+                    <!-- Tab Single  -->
+                    <div role="tabpanel" class="tab-pane fade show" id="tab2">
+                      <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="content-inner m-top-30">
                                                         <p>Notre activité édition s'articule autour de deux principaux axes:</p>
                                                         <ul class="qui_somme_ul">
                                                             <li>
@@ -130,21 +222,21 @@
                                                             </li>
                                                         </ul>
 
-												    </div>
-												</div>
-												<div class="col-lg-6 col-12">
-													<div class="skill-img m-top-30">
-														<img src="{{asset('site/images/skill-img.jpg')}}" alt="#">
-													</div>
-												</div>
-											</div>
-										</div>
-										<!--/ End Tab Single  -->
-										<!-- Tab Single  -->
-										<div role="tabpanel" class="tab-pane fade show" id="tab3">
-											<div class="row">
-												<div class="col-lg-6 col-12">
-												    <div class="content-inner m-top-30">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                          <div class="skill-img m-top-30">
+                            <img src="{{asset('site/images/skill-img.jpg')}}" alt="#">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ End Tab Single  -->
+                    <!-- Tab Single  -->
+                    <div role="tabpanel" class="tab-pane fade show" id="tab3">
+                      <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="content-inner m-top-30">
                                                         <p>
                                                             Le bulletin des appels d'offres du secteur de l'Energie Baostx est édité à raison de
                                                             5 numéros par quinzaine:
@@ -191,28 +283,31 @@
 
 
 
-												    </div>
-												</div>
-												<div class="col-lg-6 col-12">
-													<div class="skill-img m-top-30">
-														<img src="{{asset('site/images/skill-img.jpg')}}" alt="#">
-													</div>
-												</div>
-											</div>
-										</div>
-										<!--/ End Tab Single  -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                          <div class="skill-img m-top-30">
+                            <img src="{{asset('site/images/skill-img.jpg')}}" alt="#">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ End Tab Single  -->
 
 
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <!--/ End Skills -->
 
+<style type="text/css">
 
+
+</style>
 
 
 

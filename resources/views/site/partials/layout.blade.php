@@ -11,8 +11,9 @@
 
 		<!-- Title Tag  -->
 		<title>Baosem : Edition & Publicité</title>
-
+         
 		<!-- Favicon -->
+	    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>	
 		<link rel="icon" type="image/png" href="img/favicon.html">
 
 		<!-- Bootstrap CSS -->
@@ -41,7 +42,7 @@
     <style>
         /* Dropdown Button */
 
-
+ 
 /* The container <div> - needed to position the dropdown content */
 .dropdown1 {
   position: relative;
@@ -82,7 +83,7 @@
 
 		<link rel="stylesheet" href="#" id="precon_custom">
 	</head>
-	<body id="body" class="boxed-bg">
+	<body id="body" section onload="initialize()">
 
 		<!-- Preloader -->
 		<div class="preloader-main">
@@ -101,6 +102,7 @@
     </div> <!-- End Layout -->
 
 <!-- Jquery JS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 		<script src="{{asset('site/js/jquery.min.js')}}"></script>
 		<script src="{{asset('site/js/jquery-migrate-3.0.0.js')}}"></script>
 		<!-- Popper JS -->
@@ -127,7 +129,9 @@
 		<script src="{{asset('site/js/jquery.scrollUp.min.js')}}"></script>
 		<!-- Active JS -->
         <script src="{{asset('site/js/active.js')}}"></script>
+        <script src="{{asset('js/script.js')}}"></script>
         <script src="{{asset('site/js/mdb.min.js')}}"></script>
+       
         @yield('footer')
 	</body>
 </html>

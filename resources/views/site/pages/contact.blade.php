@@ -4,6 +4,67 @@
 @endsection
 @section('corp')
 
+
+
+<div class="header-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-12">
+                                <!-- Logo -->
+                                <div class="logo">
+                                    <!-- Text Logo -->
+                                    {{-- <div class="text-logo">
+                                        <a href="index.html">Baosem.</a>
+                                    </div> --}}
+                                    <!-- Image Logo-->
+                                    <div class="img-logo">
+                                        <a href="{{url('/')}}"><img src="{{asset('site/images/logo/logo.png')}}" alt="logo"></a>
+                                    </div>
+                                </div>
+                                <!-- Mobile Menu -->
+                        <div class="mobile-nav"></div>
+                            </div>
+                            <div class="col-lg-10 col-12">
+                                <div class="main-menu-bar">
+                                    <!-- Main Menu -->
+                                    <div class="main-menu">
+                                        <nav class="navbar navbar-expand-lg">
+                                            <div class="navbar-collapse">
+                                                <ul class="nav menu navbar-nav">
+
+                                                    <li><a class="menue"  href="{{url('/')}}">Accueil</a></li>
+                                                    {{-- <li><a class="menue"  href="{{url('/Presentation')}}">Présentation</a></li> --}}
+                                                    <li class="dropdown1"><a class="dropbtn menue">Abonnement</a>
+                                                        <div class="dropdown-content">
+                                                            <a class="link-hover" href="{{url('Abonnement')}}">S'abonner</a>
+                                                            <a class="link-hover" data-toggle="modal" data-target="#modalLoginForm">Se Connecter</a>
+                                                            <a class="link-hover" href="{{url('tarif')}}">Tarif</a>
+                                                        </div>
+                                                    </li>
+
+                                                    <li  ><a  class="menue" href="{{url('/Cahier_de_charge')}}">Cahier de charge</a></li>
+
+                                                    <li  ><a  class="menue" href="{{url('/Points_de_ventes')}}">Point de Ventes</a></li>
+                                                    
+
+                                                    
+                                                    <li><a class="menue" href="{{url('tarif')}}">Tarifs</a></li>
+
+                                                    <li   class="active"><a class="menue" href="{{url('Contact')}}">Contactez Nous</a></li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <!--/ End Main Menu -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             <!-- Breadcrumbs -->
 			<section style="background-image: url('{{asset('site/images/slider/slider-image1.jpg')}}')" class="breadcrumbs overlay" data-stellar-background-ratio="0.5">
 				<div class="container">
@@ -22,13 +83,14 @@
             <!-- Contact Us -->
 			<section class="contact-us section-padding">
 				<div class="container">
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-lg-8 offset-lg-2 col-12">
 							<div class="section-title text-center m-bottom-30">
 								<h2><span>Contactez</span>Nous</h2>
 							</div>
 						</div>
 					</div>
+				-->
 					<div class="row">
 						<!-- Contact Form -->
 						<div class="col-lg-8 col-12">

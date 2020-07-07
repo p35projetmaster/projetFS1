@@ -13,7 +13,9 @@
 Route::get('/', 'IndexController@index');
 Route::get('/Abonnement', 'IndexController@abonnement');
 Route::get('/Contact', 'IndexController@contact');
-Route::get('/Points_de_ventes', 'IndexController@points_de_ventes');
+Route::get('/Points_de_ventes', 'localisationController@index');
+Route::get('/Cahier_de_charge', 'IndexController@Cahier_de_charge');
+Route::get('/tarif', 'IndexController@tarif');
 
 
 

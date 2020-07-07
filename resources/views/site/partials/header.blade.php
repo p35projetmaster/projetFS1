@@ -36,54 +36,7 @@
 				</div>
 				<!--/ End Topbar -->
 				<!-- Header Inner -->
-				<div class="header-inner">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-2 col-12">
-								<!-- Logo -->
-								<div class="logo">
-									<!-- Text Logo -->
-									{{-- <div class="text-logo">
-										<a href="index.html">Baosem.</a>
-									</div> --}}
-									<!-- Image Logo-->
-									<div class="img-logo">
-										<a href="{{url('/')}}"><img src="{{asset('site/images/logo/logo.png')}}" alt="logo"></a>
-									</div>
-								</div>
-								<!-- Mobile Menu -->
-								<div class="mobile-nav"></div>
-							</div>
-							<div class="col-lg-10 col-12">
-								<div class="main-menu-bar">
-									<!-- Main Menu -->
-									<div class="main-menu">
-										<nav class="navbar navbar-expand-lg">
-											<div class="navbar-collapse">
-												<ul class="nav menu navbar-nav">
-
-                                                    <li class="active"><a class="menue"  href="{{url('/')}}">Accueil</a></li>
-													{{-- <li><a class="menue"  href="{{url('/Presentation')}}">Présentation</a></li> --}}
-													<li class="dropdown1"><a class="dropbtn menue">Abonnement</a>
-                                                        <div class="dropdown-content">
-                                                            <a class="link-hover" href="{{url('Abonnement')}}">S'abonner</a>
-                                                            <a class="link-hover" data-toggle="modal" data-target="#modalLoginForm">Se Connecter</a>
-                                                        </div>
-                                                    </li>
-                                                    <li><a class="menue" href="{{url('/Points_de_ventes')}}">Point de Ventes</a></li>
-													<li><a class="menue" href="{{url('Contact')}}">Contactez Nous</a></li>
-												</ul>
-											</div>
-										</nav>
-									</div>
-									<!--/ End Main Menu -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--/ End Header Inner -->
-            </header>
+				</header>
             <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">

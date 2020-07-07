@@ -108,6 +108,8 @@
                                     <li><a href="{{url('/')}}"><i class="fa fa-angle-right"></i>Acceuil</a></li>
                                     <li><a href="{{url('/Abonnement')}}"><i class="fa fa-angle-right"></i>Abonnement</a></li>
                                     <li><a href="{{url('/Points_de_ventes')}}"><i class="fa fa-angle-right"></i>Points de Vente</a></li>
+                                    <li><a href="{{url('/Cahier_de_charge')}}"><i class="fa fa-angle-right"></i>Cahier de charge</a></li>
+                                    <li><a href="{{url('/tarif')}}"><i class="fa fa-angle-right"></i>Tarif</a></li>
                                     <li><a href="{{url('/Contact')}}"><i class="fa fa-angle-right"></i>Contact</a></li>
 
                                 </ul>
